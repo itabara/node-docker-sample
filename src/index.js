@@ -8,6 +8,7 @@ app.get('/', function (req, res) {
   res.send('<html><body>Hello from Node.js container: ' + hostname + '</body></html>');
 });
 
-app.set('port', process.env.PORT || 3000);
-app.listen(app.get('port'));
-console.log('Running on http://localhost:' + app.get('port'));
+var port = process.env.PORT || 3000;
+app.set('port', port);
+app.listen(port);
+console.log('Running on http://' + hostname + ':' + port);
