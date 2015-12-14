@@ -1,0 +1,3 @@
+sudo docker build -t node-docker-sample .
+docker run -d -v /mnt/logs/:/logs -p 80:80 node-docker-sample
+curl localhost:80
