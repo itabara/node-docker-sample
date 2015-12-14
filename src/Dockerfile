@@ -12,4 +12,5 @@ RUN cd /opt/haproxy-1.5.3 && make TARGET=linux2628 && make install
 ADD haproxy.cfg /opt/haproxy-1.5.3/haproxy.cfg
 ADD supervisor.conf /etc/supervisor/conf.d/supervisor.conf
 EXPOSE 80 8081 8082 8083
+RUN cd /opt/node-docker-sample/src/ && npm install
 CMD "/usr/bin/supervisord"
