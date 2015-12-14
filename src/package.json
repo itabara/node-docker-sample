@@ -1,0 +1,14 @@
+{
+  "name": "nodesample",
+  "version": "1.0.0",
+  "description": "Node.js Hello world app on docker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"    
+  },
+  "author": "Iulian Tabara",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
